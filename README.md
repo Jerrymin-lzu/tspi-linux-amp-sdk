@@ -1,6 +1,6 @@
 # TSPI-Linux AMP SDK
 
-- 基于泰山派SDK：https://github.com/CmST0us/tspi-linux-sdk.git修改得到泰山派AMP sdk，支持3linux+1rtt同时运行，linux占用串口2，rtt占用串口4。目前初步启动，仍存在设备资源的约束问题
+- 基于泰山派SDK：https://github.com/CmST0us/tspi-linux-sdk.git 修改得到泰山派AMP sdk，支持3linux+1rtt同时运行，linux占用串口2，rtt占用串口4。目前初步启动，仍存在设备资源的约束问题
 
 
 -----------
