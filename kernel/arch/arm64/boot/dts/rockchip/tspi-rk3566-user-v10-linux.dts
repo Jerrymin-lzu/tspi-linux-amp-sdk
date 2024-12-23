@@ -41,6 +41,9 @@
 //【开/关】摄像头 目前视频的是ov5659
 #include "tspi-rk3566-csi-v10.dtsi"
 
+//【开/关】amp configurations 
+#include "rk3568-amp.dtsi"
+
 //【开/关】下方是用户定义层，所有用户修改理论上在此下方修改就好了
 / {
 	model = "lckfb tspi V10 Board";
@@ -119,6 +122,11 @@
 	status = "okay";
 	pinctrl-names = "default";
 	pinctrl-0 = <&uart3m1_xfer>;
+};
+
+&uart4{
+    pinctrl-0 = <&uart4m1_xfer>;
+    status = "okay";
 };
 
 //用户I2C2

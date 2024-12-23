@@ -84,11 +84,11 @@ build_firmware()
                 echo -e "\e[35mIs buildroot fs, continue packing firmware\e[0m"
         else
                 echo -e "\e[35mNot buildroot fs, No need continue packing firmware\e[0m"
-                exit 0
+                #exit 0
         fi
 
 
-	pack_extra_partitions
+	#pack_extra_partitions
 
 	echo "Packed files:"
 	for f in "$RK_FIRMWARE_DIR"/*; do

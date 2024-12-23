@@ -22,6 +22,8 @@ build_all()
 
 	"$SCRIPTS_DIR/mk-security.sh" security_check
 
+	"$SCRIPTS_DIR/mk-rtthread.sh"
+
 	if [ "$RK_KERNEL_CFG" ]; then
 		"$SCRIPTS_DIR/mk-kernel.sh"
 		"$SCRIPTS_DIR/mk-rootfs.sh"
@@ -72,7 +74,7 @@ build_save()
 
 	echo "Saving images..."
 	mkdir -p "$SAVE_DIR/IMAGES"
-	cp "$RK_FIRMWARE_DIR"/* "$SAVE_DIR/IMAGES/"
+	cp -r "$RK_FIRMWARE_DIR"/* "$SAVE_DIR/IMAGES/"
 
 	echo "Saving build info..."
 :<<eof

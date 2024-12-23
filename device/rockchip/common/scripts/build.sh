@@ -248,6 +248,8 @@ main()
 	export RK_FINAL_ENV="$RK_OUTDIR/final.env"
 	export RK_CONFIG="$RK_OUTDIR/.config"
 	export RK_DEFCONFIG_LINK="$RK_OUTDIR/defconfig"
+	
+	export RTT_DIR="$SDK_DIR/rt-thread"
 
 	if [ ! -d "$RK_LOG_DIR" ]; then
 		mkdir -p "$RK_LOG_DIR"
